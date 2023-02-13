@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppRouter renders the Episode component when the path is "/podcast/:podcastId/episode/:episodeId" 1`] = `
+<div>
+  <div
+    class="app__container"
+  >
+    <div
+      class="error dark"
+    >
+      <p>
+        Error 404 - Route Not Found
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AppRouter renders the Not Found component when the path is "/*" and not in Router 1`] = `
+<div>
+  <div
+    class="app__container"
+  >
+    <div
+      class="error dark"
+    >
+      <p>
+        Error 404 - Route Not Found
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render the pagination component correctly 1`] = `
+<div>
+  <div
+    class="pagination undefined"
+  >
+    <ul
+      class="pagination__options"
+    >
+      <li
+        class="pagination__options__button disabled"
+      >
+        Prev
+      </li>
+      <li
+        class="pagination__options__page undefined pagination__options__page__active"
+      >
+        1
+      </li>
+      <li
+        class="pagination__options__page undefined "
+      >
+        2
+      </li>
+      <li
+        class="pagination__options__page undefined "
+      >
+        3
+      </li>
+      <li
+        class="pagination__options__page undefined "
+      >
+        4
+      </li>
+      <li
+        class="pagination__options__page undefined "
+      >
+        5
+      </li>
+      <li
+        class="pagination__options__button "
+      >
+        Next
+      </li>
+    </ul>
+    <p>
+      1
+       -
+       
+      10
+    </p>
+  </div>
+</div>
+`;

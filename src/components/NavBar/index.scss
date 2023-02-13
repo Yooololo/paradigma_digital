@@ -1,0 +1,39 @@
+.NavBar {
+  height: calc($podcast-box-height / 3);
+  width: calc(100% - 2 * $padding);
+  padding: $margin $padding;
+  position: relative;
+  z-index: 100;
+  &.dark {
+    background-color: $grey-darker;
+    box-shadow: 2px 1px 2px $white;
+    a {
+      -webkit-text-stroke: 0.25px $white;
+    }
+  }
+  &.light {
+    box-shadow: 2px 1px 2px $grey;
+    background-color: $white;
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue;
+    font-family: $font-family-alt;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: min-content;
+
+    img {
+      max-height: calc($podcast-box-height / 4);
+      margin-right: $margin;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

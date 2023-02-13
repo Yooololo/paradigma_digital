@@ -1,0 +1,38 @@
+.blobLoader {
+  position: absolute;
+  top: 2 * $padding + 2 * $margin;
+  z-index: 99;
+
+  &.dark {
+    section {
+      background-color: $grey-darker;
+      color: $white;
+    }
+  }
+  &.light {
+    section {
+      background-color: $white;
+      color: $black;
+    }
+  }
+  section {
+    height: calc(100vh - 2 * $padding - 2 * $margin);
+    width: 100vw;
+    padding-left: $padding;
+    div {
+      height: min-content;
+      width: fit-content;
+      font-size: $font-size * 1.5;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__blob {
+    float: right;
+    height: calc(($podcast-box-height) / 3 + 3 * $margin) !important;
+    width: calc(($podcast-box-height) / 3 + 3 * $margin) !important;
+    padding: 0;
+    margin-right: $padding;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "app.podcasts.author": "Autor:",
+  "app.podcasts.filter.placeholder": "Filtrar podcasts...",
+  "app.podcasts.sort.placeholder": "Ordenar por:",
+  "app.podcasts.perPage.placeholder": "Mostrar:",
+  "app.podcast.episodes": "Episodios:",
+  "app.podcast.by": "por",
+  "app.podcast.description": "Descripción:",
+  "app.podcast.title": "Título",
+  "app.podcast.date": "Fecha",
+  "app.podcast.duration": "Duración",
+  "app.error": "Ha habido un error, por favor revisa la consola para más detalles",
+  "app.loading": "Cargando",
+  "app.prev": "Anterior",
+  "app.next": "Siguiente",
+  "app.e404": "Error 404 - Ruta no encontrada",
+  "app.noResults": "Ningún resultado coincide con su criterio de búsqueda: "
+}

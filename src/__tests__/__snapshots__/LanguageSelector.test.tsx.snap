@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageSelector renders correctly 1`] = `
+<div>
+  <div
+    class="LanguageSelector dark"
+  >
+    <img
+      alt="en"
+      class="flag dark"
+      src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
+    />
+    <img
+      alt="es"
+      class="flag dark"
+      src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ES.svg"
+    />
+    <img
+      alt="zh"
+      class="flag dark"
+      src="http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg"
+    />
+  </div>
+</div>
+`;

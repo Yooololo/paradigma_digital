@@ -1,0 +1,193 @@
+.podcast {
+  width: 100%;
+  display: grid;
+  gap: $padding;
+  grid-template-columns: 25% 75%;
+  min-height: calc(100vh - 2 * $padding - 2 * $margin);
+  * {
+    font-family: $font-family-alt;
+  }
+
+  &.dark {
+    background-color: $grey-darker;
+  }
+  &.light {
+    background-color: $white;
+  }
+  &__detail {
+    width: 100%;
+    margin: $padding;
+    min-height: $podcast-detail-box-min-height;
+    max-width: $podcast-detail-box-max-width;
+    box-shadow: $box-shadow;
+    padding: $padding $margin;
+    border-radius: $box-border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: min-content;
+    a {
+      text-decoration: none;
+      color: $black;
+      margin: 0 $padding;
+      height: min-content;
+      border: none;
+      img {
+        height: fit-content;
+        border-radius: 2 * $box-border-radius;
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+    hr {
+      margin: $padding 0;
+      width: 100%;
+      height: 1px;
+      border: none;
+      background-color: $grey;
+    }
+    &__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      a {
+        margin: 0;
+      }
+
+      p:first-child {
+        font-weight: bold;
+        margin-bottom: calc($margin/2);
+        &.dark {
+          color: $white;
+        }
+        &.light {
+          color: $black;
+        }
+      }
+      p:last-child {
+        font-style: italic;
+        inline-size: auto;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        &.dark {
+          color: $grey-light;
+        }
+        &.light {
+          color: $grey-dark;
+        }
+      }
+    }
+  }
+
+  &__list {
+    margin: $padding;
+    width: calc(100% - 3 * $padding);
+    div:first-child {
+      border-radius: $box-border-radius;
+      padding: $margin;
+      box-shadow: $box-shadow;
+      font-weight: 600;
+      font-size: 1.5 * $font-size;
+      &.dark {
+        color: $white;
+      }
+      &.light {
+        color: $black;
+      }
+    }
+
+    div:last-child {
+      width: calc(100% - 2 * $padding);
+      margin-top: $padding;
+      padding: $padding;
+      border-radius: $box-border-radius;
+      box-shadow: $box-shadow;
+      &.dark {
+        tbody {
+          tr:nth-child(2n) {
+            background-color: $white-50;
+          }
+          tr:nth-child(2n + 1) {
+            -webkit-text-stroke: 0.1px $white;
+          }
+        }
+        td {
+          color: $white;
+          border-bottom: 1px solid $white;
+        }
+      }
+      &.light {
+        tbody {
+          tr:nth-child(2n) {
+            background-color: $grey-light-50;
+          }
+        }
+        td {
+          color: $black;
+          border-bottom: 1px solid $grey-light;
+        }
+      }
+      table {
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        * {
+          font-size: $font-size;
+        }
+        tbody {
+          tr {
+            a {
+              text-decoration: none;
+              color: $blue;
+            }
+            width: 100%;
+            td {
+              text-align: left;
+              padding: $margin 0;
+            }
+            td:nth-child(1) {
+              color: $blue;
+              width: 70%;
+              padding-left: $margin;
+            }
+            td:nth-child(2) {
+              width: 15%;
+            }
+            td:nth-child(3) {
+              width: 15%;
+              text-align: center;
+              padding-right: $margin;
+            }
+          }
+          tr:first-child {
+            height: $margin + $padding;
+            * {
+              font-weight: bold;
+              font-size: $font-size * 1.25;
+            }
+            td {
+              color: $black;
+            }
+          }
+        }
+      }
+      &.dark {
+        tr:first-child {
+          td {
+            color: $white;
+            border-bottom: 2px solid $white;
+          }
+        }
+      }
+      &.light {
+        tr:first-child {
+          td {
+            color: $black;
+            border-bottom: 2px solid $grey-light;
+          }
+        }
+      }
+    }
+  }
+}

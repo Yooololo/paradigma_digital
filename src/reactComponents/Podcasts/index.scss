@@ -1,0 +1,246 @@
+.podcastsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: calc(100vh - 2 * $padding - 2 * $margin);
+
+  &.dark {
+    background-color: $grey-darker;
+  }
+  &.light {
+    background-color: $white;
+  }
+
+  .podcasts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2 * $padding;
+    justify-items: center;
+    padding: $padding;
+    margin-top: $box-margin;
+    width: calc(100% - 2 * $padding);
+    a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      box-shadow: $box-shadow;
+      min-height: $podcast-box-height;
+      width: 100%;
+      position: relative;
+      border-radius: $box-border-radius;
+      margin-bottom: $box-margin;
+    }
+
+    &__podcast {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        border-radius: 999px;
+        box-shadow: $box-shadow-images;
+        position: absolute;
+        width: 45%;
+        top: -30%;
+        display: block;
+      }
+
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: calc($podcast-box-height/2);
+
+        h2 {
+          margin: $margin;
+          margin-top: calc($box-margin / 4 + 2 * $padding);
+          text-align: center;
+          font-weight: 600;
+          &.dark {
+            color: $white;
+          }
+          &.light {
+            color: $black;
+          }
+        }
+
+        h3 {
+          text-align: center;
+          font-weight: 600;
+          margin: 0 $margin (2 * $margin);
+          word-break: break-all;
+          &.dark {
+            color: $grey-light;
+          }
+          &.light {
+            color: $grey-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .filter {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 100%;
+    padding: $padding 0;
+
+    &__organize {
+      display: flex;
+      justify-content: center;
+    }
+    .resultsPerPage {
+      label {
+        color: $white;
+        display: flex;
+        align-items: center;
+        min-height: $padding;
+        max-height: $padding;
+        justify-self: center;
+        margin: 0;
+        padding: $margin 0 $margin $margin;
+        background-color: rgb(25, 125, 175);
+        border: 1px solid $grey-light;
+        border-radius: $box-border-radius 0 0 $box-border-radius;
+        border-right: none;
+        min-width: calc($podcast-box-height / 3 + $margin);
+        width: auto;
+      }
+      display: flex;
+      align-items: center;
+      .reactSelect {
+        margin: 0;
+        &__control {
+          min-width: 4 * $padding !important;
+          border-left: none !important;
+          border-radius: 0 $box-border-radius $box-border-radius 0;
+        }
+        &__placeholder {
+          margin-left: $margin !important;
+        }
+      }
+    }
+    &__podcastsLength {
+      display: flex;
+      align-items: center;
+      background-color: $blue;
+      width: min-content;
+      color: $white;
+      padding: $margin;
+      font-size: $font-size;
+      border-radius: $box-border-radius * 2;
+      min-height: $padding;
+      border: 1px solid $white;
+    }
+
+    &__input {
+      margin: 0 $margin;
+      font-family: $font-family-alt;
+      padding: $margin;
+      min-width: 2 * $podcast-box-height;
+      min-height: $padding;
+      border: 1px solid $grey;
+      border-radius: $box-border-radius;
+      &:focus {
+        outline: $blue;
+      }
+
+      &.dark {
+        background-color: $grey-light;
+        &::placeholder {
+          color: $grey-dark;
+        }
+      }
+      &.light {
+        background-color: $white;
+        &::placeholder {
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+.reactSelect {
+  margin: 0 $padding;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &__value-container {
+    height: 100% !important ;
+    padding: 0 $margin !important;
+    margin-right: $margin;
+    justify-items: center;
+  }
+  &__single-value {
+    color: $white !important;
+  }
+  &__control {
+    height: $padding + 2 * $margin + 2px !important;
+    justify-self: flex-start !important;
+    background-color: $blue !important;
+    border: 1px solid $grey-light !important;
+    box-shadow: none !important;
+    outline: none !important;
+    min-width: $podcast-box-height + 2 * $padding;
+  }
+  &__placeholder {
+    color: $white !important;
+    text-align: center !important;
+  }
+  &__menu {
+    width: fit-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__indicator {
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.dark {
+  .reactSelect {
+    &__menu-list {
+      background-color: $grey-dark;
+      color: $white;
+      border-radius: $box-border-radius;
+    }
+    &__option {
+      &:hover {
+        color: $black;
+      }
+      &--is-focused {
+        color: $black;
+      }
+    }
+  }
+}
+
+.error {
+  color: $error-color;
+  height: calc(100vh - 2 * $padding - 2 * $margin);
+  width: 100vw;
+  &.dark {
+    background-color: $grey-darker;
+  }
+  &.light {
+    background-color: $white;
+  }
+  p {
+    padding: 2 * $padding;
+    text-align: center;
+    font-size: 1.5 * $font-size;
+    font-weight: 600;
+  }
+}

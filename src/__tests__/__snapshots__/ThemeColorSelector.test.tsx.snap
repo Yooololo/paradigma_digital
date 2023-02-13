@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageSelector renders correctly 1`] = `
+<div>
+  <div
+    class="ThemeColorSelector"
+  >
+    <label
+      class="dark"
+      for="themeColor"
+    >
+      <span
+        class="theme__toggle__wrap"
+      >
+        <input
+          checked=""
+          class="theme__toggle dark"
+          id="themeColor"
+          name="themeColor"
+          role="switch"
+          type="checkbox"
+          value="dark"
+        />
+        <span
+          class="theme__fill dark"
+        />
+        <span
+          class="theme__icon dark"
+        >
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+          <span
+            class="theme__icon__part dark"
+          />
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+`;

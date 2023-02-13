@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { StrictMode, Suspense } from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import { store } from "./redux/store";
 
-function App() {
+import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
+
+import LanguageWrapper from "./context/LanguageWrapper";
+import ThemeColorWrapper from "./context/ThemeColorWrapper";
+
+import AppRouter from "./AppRouter";
+import NavBar from "./components/NavBar";
+import Blob from "./components/BlobLoader";
+import apiSlice from "./redux/api/apiSlice";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StrictMode>
+      <Provider store={store}>
+        <LanguageWrapper>
+          <ThemeColorWrapper>
+            <ApiProvider api={apiSlice}>
+              <BrowserRouter>
+                <Suspense fallback={<Blob />}>
+                  <NavBar />
+                  <AppRouter />
+                </Suspense>
+              </BrowserRouter>
+            </ApiProvider>
+          </ThemeColorWrapper>
+        </LanguageWrapper>
+      </Provider>
+    </StrictMode>
   );
-}
+};
 
 export default App;

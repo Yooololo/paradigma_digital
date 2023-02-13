@@ -1,0 +1,76 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: $padding;
+
+  p {
+    margin-top: $margin;
+    background-color: $blue;
+    padding: $margin;
+    border-radius: $box-border-radius * 2;
+    color: $white;
+  }
+  &.dark {
+    p {
+      border: 1px solid $white;
+    }
+  }
+  &.light {
+    p {
+      border: 1px solid $grey;
+    }
+  }
+  &__options {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+    &__button {
+      cursor: pointer;
+      font-weight: 500;
+      margin: 0 $margin;
+      padding: $margin;
+      background-color: $blue;
+      color: $white;
+      font-size: $font-size;
+      border-radius: $box-border-radius * 2;
+      border: 1px solid $white;
+    }
+
+    &__page {
+      cursor: pointer;
+      padding: calc($margin/2);
+      margin: 0 calc($margin/2);
+      font-size: $font-size;
+      &.dark {
+        color: $white;
+      }
+      &.light {
+        color: $black;
+      }
+      &:hover {
+        color: $blue;
+        font-weight: 600;
+      }
+      &__active {
+        background-color: $blue-50;
+        color: $white !important;
+        border-radius: $box-border-radius;
+        border: 1px solid $grey-dark;
+        &.dark {
+          border: 1px solid $white;
+        }
+      }
+    }
+  }
+  .disabled {
+    cursor: default;
+    background-color: $grey;
+  }
+}
+
+.hidden {
+  height: calc(1.5 * $margin + 2 * $padding);
+}

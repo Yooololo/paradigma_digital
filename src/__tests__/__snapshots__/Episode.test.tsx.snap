@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Episode should render the podcast episode and details 1`] = `
+<div>
+  <div
+    class="podcast dark"
+  >
+    <div
+      class="podcast__detail"
+    >
+      <a
+        class=""
+        href="/podcast/120315823"
+      >
+        <img
+          src="https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/0d/00/3d/0d003d69-71dc-54ac-2e49-71344d581ebc/mza_17414366298101550888.jpeg/600x600bb.jpg"
+        />
+      </a>
+      <hr />
+      <section
+        class="podcast__detail__section"
+      >
+        <a
+          class=""
+          href="/podcast/120315823"
+        >
+          <p
+            class="dark"
+          >
+            Popcast
+          </p>
+          <p
+            class="dark"
+          >
+            by
+             
+            The New York Times
+          </p>
+        </a>
+      </section>
+      <hr />
+      <section
+        class="podcast__detail__section"
+      >
+        <p
+          class="dark"
+        >
+          Description:
+        </p>
+        <p
+          class="dark"
+        >
+          The Popcast is hosted by Jon Caramanica, a pop music critic for The New York Times. It covers the latest in popular music criticism, trends and news.
+        </p>
+      </section>
+    </div>
+    <div
+      class="podcast__episode dark"
+    >
+      <h1>
+        Lil Yachty Breaks Boundaries and Takes on Rap Conservatism
+      </h1>
+      <div>
+        A conversation about the hip-hop eccentrics experiments, and the benefits (and perils) of collaborating outside an artists established genre. Guests: Jayson Buford and The Ringer's Justin Charity.
+      </div>
+      <hr />
+      <audio
+        controls=""
+      >
+        <source
+          src="https://dts.podtrac.com/redirect.mp3/chrt.fm/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/9257fd86-22fe-4866-89a9-12c73a57a552/episodes/4fbc7178-cdf9-4956-baf7-ac9bfefa765d/audio/128/default.mp3?aid=rss_feed&awCollectionId=9257fd86-22fe-4866-89a9-12c73a57a552&awEpisodeId=4fbc7178-cdf9-4956-baf7-ac9bfefa765d&feed=W1rB_kgL"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+  </div>
+</div>
+`;

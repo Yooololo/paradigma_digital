@@ -1,0 +1,35 @@
+// Colors
+$grey-lighter: rgb(250, 250, 250);
+$grey-light-50: rgb(225, 225, 225, 0.5);
+$grey-light: rgb(200, 200, 200);
+$grey: rgb(150, 150, 150);
+$grey-dark: rgb(100, 100, 100);
+$grey-darker: rgb(50, 50, 50);
+$error-color: rgb(255, 0, 0);
+$blue: rgb(25, 125, 175);
+$blue-50: rgb(25, 125, 175, 0.5);
+$black: #000000;
+$white-50: rgba(255, 255, 255, 0.5);
+$white: #ffffff;
+$gold: #ffd700;
+
+// Sizes
+$podcast-box-height: 150px;
+$podcast-detail-box-min-height: 500px;
+$podcast-detail-box-max-width: 250px;
+$box-margin: 100px;
+$padding: 25px;
+$margin: 10px;
+$box-border-radius: 3px;
+
+// Font
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap");
+$font-family: "Comfortaa", sans-serif;
+$font-family-alt: "Helvetica", "Arial", sans-serif;
+$font-weight: 400;
+$font-size: 16px;
+
+// Utils
+$box-shadow: 0 3px 4px 2px $grey, 0 -0.5px 0.5px 0.5px $grey-lighter;
+$box-shadow-images: 0 2px 3px 1px $grey;
+$animation: 0.5s;

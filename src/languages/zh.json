@@ -1,0 +1,18 @@
+{
+  "app.podcasts.author": "作者：",
+  "app.podcasts.filter.placeholder": "过滤播客...",
+  "app.podcasts.sort.placeholder": "排序依据：",
+  "app.podcasts.perPage.placeholder": "显示：",
+  "app.podcast.episodes": "剧集：",
+  "app.podcast.by": "由",
+  "app.podcast.description": "描述：",
+  "app.podcast.title": "标题",
+  "app.podcast.date": "日期",
+  "app.podcast.duration": "时长",
+  "app.error": "出现错误，请查看控制台了解更多详情",
+  "app.loading": "加载中",
+  "app.prev": "上一个",
+  "app.next": "下一步",
+  "app.e404": "错误 404 - 找不到路由",
+  "app.noResults": "没有符合您搜索条件的结果："
+}

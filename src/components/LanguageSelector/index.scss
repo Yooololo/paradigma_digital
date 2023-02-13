@@ -1,0 +1,13 @@
+.LanguageSelector {
+  .flag {
+    width: $margin + $padding;
+    margin: 0 $margin;
+    cursor: pointer;
+    &.light {
+      border: 2px solid $black;
+    }
+    &.dark {
+      border: 2px solid $white;
+    }
+  }
+}

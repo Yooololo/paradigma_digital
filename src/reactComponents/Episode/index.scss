@@ -1,0 +1,68 @@
+.podcast {
+  &__episode {
+    margin: $padding 0;
+    width: calc(100% - 4 * $padding);
+    border-radius: $box-border-radius;
+    padding: $padding;
+    box-shadow: $box-shadow;
+    height: min-content;
+  }
+
+  .dark {
+    h1 {
+      color: $white;
+    }
+    div {
+      color: $grey-light;
+    }
+  }
+  .light {
+    h1 {
+      color: $black;
+    }
+    div {
+      color: $grey-dark;
+    }
+  }
+  h1 {
+    font-size: 2 * $font-size;
+    font-weight: 600;
+    padding-bottom: $padding;
+  }
+
+  div {
+    font-style: italic;
+  }
+
+  hr {
+    margin: $padding 0;
+  }
+
+  audio {
+    width: 100%;
+    border-radius: 999px;
+    background-color: $grey;
+    &::-webkit-media-controls-enclosure {
+      background-color: $grey;
+    }
+    &::-webkit-media-controls-panel,
+    &::-webkit-media-controls-mute-button,
+    &::-webkit-media-controls-play-button,
+    &::-webkit-media-controls-timeline-container,
+    &::-webkit-media-controls-current-time-display,
+    &::-webkit-media-controls-time-remaining-display,
+    &::-webkit-media-controls-timeline,
+    &::-webkit-media-controls-volume-slider-container,
+    &::-webkit-media-controls-volume-slider,
+    &::-webkit-media-controls-seek-back-button,
+    &::-webkit-media-controls-seek-forward-button,
+    &::-webkit-media-controls-fullscreen-button,
+    &::-webkit-media-controls-rewind-button,
+    &::-webkit-media-controls-return-to-realtime-button,
+    &::-webkit-media-controls-toggle-closed-captions-button {
+      color: $white;
+      font-size: $font-size;
+      text-shadow: none;
+    }
+  }
+}
